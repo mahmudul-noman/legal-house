@@ -15,6 +15,12 @@ p, a {
 }
 
 /* navbar style */
+.banner-img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 6rem;
+}
 .btn-consult {
     background-color: #B68C5A;
     color: #FFF;
@@ -35,22 +41,44 @@ p, a {
 .banner-text h1 {
     font-size: 72px;
 }
+.banner-text p {
+    font-weight: 400;
+    font-size: 16px;
+}
+.banner-search input {
+    width: 24rem;
+    height: 4rem;
+}
+.banner-button button{
+    width: 8rem;
+    height: 4rem;
+    background: #de8110;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+}
+.banner-button:hover button{
+    background: #de8110;
+}
 
-/* services styles */
-/* .card-group-custom {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
 .card {
     transition: .5s;
 }
 .card:hover {
     background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
 }
+.section-title h2 {
+    font-size: 40px;
+}
 
-
-
-
+/* .slider-clients img {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+} */
+.accor-btn-cstm {
+    font-weight: 800;
+    font-size: 20px;
+    color: #414040;
+}
 
 
 
