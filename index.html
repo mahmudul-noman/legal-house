@@ -85,24 +85,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-auto banner-img">
-                    <!-- <div>
-                        <img class="img-fluid" src="./images/banner.png" alt="">
-                    </div> -->
-                    <!-- <div class="banner-text position-absolute text-center"> -->
                     <div class="banner-text text-center">
                         <h1>We Provide Effective <br>Legal Solutions</h1>
                         <p class="py-3">There are many variations of passages of Lorem Ipsum available, but the majority
                             have
                             suffered alteration in some form, by injected humour.</p>
-                        <form class="row g-3 justify-content-center">
-                            <div class="col-auto banner-search rounded">
-                                <input type="email" class="form-control" id="inputPassword2"
-                                    placeholder="Search your services">
+
+                        <div class="btn-toolbar gap-4 mb-3 justify-content-center" role="toolbar"
+                            aria-label="Toolbar with button groups">
+                            <div class="input-group banner-search">
+                                <input type="text" class="form-control" placeholder="Search your services"
+                                    aria-label="Input group example" aria-describedby="btnGroupAddon">
                             </div>
-                            <div class="col-auto banner-button rounded">
-                                <button type="submit" class="btn btn-primary mb-3">Search</button>
+                            <div class="btn-group me-2 banner-button" role="group" aria-label="First group">
+                                <button type="button" class="btn btn-outline-secondary">Search</button>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -126,7 +124,7 @@
                 </div>
                 <div class="row row-cols-1 row-cols-md-3 g-0 pt-5">
                     <div class="col">
-                        <div class="card text-center align-items-center p-4 border-0 border-bottom rounded-0">
+                        <div class="card text-center align-items-center p-4 border-0 border-bottom rounded-0 mycard">
                             <img class="w-auto" src="./images/business.png" class="card-img-top" alt="...">
                             <div class="card-body py-5">
                                 <h5 class="card-title">Business Law</h5>
@@ -138,7 +136,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card text-center align-items-center p-4 border-top-0 rounded-0">
+                        <div class="card text-center align-items-center p-4 border-top-0 rounded-0 mycard">
                             <img class="w-auto" src="./images/criminal.png" class="card-img-top" alt="...">
                             <div class="card-body py-5">
                                 <h5 class="card-title">Criminal Law</h5>
@@ -150,7 +148,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card text-center align-items-center p-4 border-0 border-bottom rounded-0">
+                        <div class="card text-center align-items-center p-4 border-0 border-bottom rounded-0 mycard">
                             <img class="w-auto" src="./images/child.png" class="card-img-top" alt="...">
                             <div class="card-body py-5">
                                 <h5 class="card-title">Child Support</h5>
@@ -162,7 +160,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card text-center align-items-center p-4 border-0 rounded-0">
+                        <div class="card text-center align-items-center p-4 border-0 rounded-0 mycard">
                             <img class="w-auto" src="./images/education.png" class="card-img-top" alt="...">
                             <div class="card-body py-5">
                                 <h5 class="card-title">Education Law</h5>
@@ -174,7 +172,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card text-center align-items-center p-4 border-top-0 border-bottom-0 rounded-0">
+                        <div class="card text-center align-items-center p-4 border-top-0 border-bottom-0 rounded-0 mycard">
                             <img class="w-auto" src="./images/divorce.png" class="card-img-top" alt="...">
                             <div class="card-body py-5">
                                 <h5 class="card-title">Divorce Law</h5>
@@ -186,7 +184,7 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="card text-center align-items-center p-4 border-0 rounded-0">
+                        <div class="card text-center align-items-center p-4 border-0 rounded-0 mycard">
                             <img class="w-auto" src="./images/tax.png" class="card-img-top" alt="...">
                             <div class="card-body py-5">
                                 <h5 class="card-title">Tax Law</h5>
@@ -294,7 +292,7 @@
                 </div>
                 <div class="row row-cols-1 row-cols-md-2 mt-4">
                     <div class="col my-auto">
-                        <div class="accordion pe-5" id="accordionExample">
+                        <div class="accordion" id="accordionExample">
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
                                     <button class="accordion-button accor-btn-cstm" type="button"
@@ -307,12 +305,15 @@
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> Flexbox</strong> offers greater control over alignment and space distribution between
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i>
+                                                Flexbox</strong> offers greater control over alignment and space
+                                            distribution between
                                             items. Being one-dimensional, Flexbox only deals with either columns or
                                             rows. This system works for smaller layouts, but cannot render complex
                                             displays such as text or document-centric properties that enable floats and
-                                            columns. <br>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> Grid</strong> has two-dimension layout capabilities which allow flexible widths as a
+                                            columns. <br><br>
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> Grid</strong>
+                                            has two-dimension layout capabilities which allow flexible widths as a
                                             unit of length. This compensates for the limitations in Flex.
                                         </p>
                                     </div>
@@ -330,7 +331,14 @@
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> CSS media queries</strong> consist of an (optional) media type and one or more expressions called media features. Multiple queries can be combined by logical operators. Media queries are introduced with "@media" and assign a CSS block to a page only if the following conditions are met. Media queries are used to query media type (smartphone, tablet, printer, TV) and media characteristics such as screen orientation, resolution, height, width, or colors, and, as a result, to set breakpoints.
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> CSS media
+                                                queries</strong> consist of an (optional) media type and one or more
+                                            expressions called media features. Multiple queries can be combined by
+                                            logical operators. Media queries are introduced with "@media" and assign a
+                                            CSS block to a page only if the following conditions are met. Media queries
+                                            are used to query media type (smartphone, tablet, printer, TV) and media
+                                            characteristics such as screen orientation, resolution, height, width, or
+                                            colors, and, as a result, to set breakpoints.
                                         </p>
                                     </div>
                                 </div>
@@ -347,8 +355,18 @@
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> A box in CSS</strong> consists of a content area, which is where any text, images, or other HTML elements are displayed. This is optionally surrounded by padding, a border, and a margin, on one or more sides. The box model describes how these elements work together to create a box as displayed by CSS. <br>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> The box model</strong> is a term thrown around in CSS with very little context, but is probably the most important and fundamental thing you can know in CSS. Simply put, the box model determines, the size, margin, and padding of any object on the page. It also refers to the weird way CSS handles 'inline' and 'block' content.
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> A box in
+                                                CSS</strong> consists of a content area, which is where any text,
+                                            images, or other HTML elements are displayed. This is optionally surrounded
+                                            by padding, a border, and a margin, on one or more sides. The box model
+                                            describes how these elements work together to create a box as displayed by
+                                            CSS. <br><br>
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> The box
+                                                model</strong> is a term thrown around in CSS with very little context,
+                                            but is probably the most important and fundamental thing you can know in
+                                            CSS. Simply put, the box model determines, the size, margin, and padding of
+                                            any object on the page. It also refers to the weird way CSS handles 'inline'
+                                            and 'block' content.
                                         </p>
                                     </div>
                                 </div>
@@ -361,13 +379,23 @@
                                         4. What is Semantic Tag ? How does it Works ?
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> Semantic HTML</strong> or semantic markup is HTML that introduces meaning to the web page rather than just presentation. Semantic HTML, also known as semantic markup, refers to the use of HTML tags that convey the meaning—or semantics—of the content contained within them.
-                                            By adding semantic HTML tags to your pages, you provide additional information that helps define the roles and relative importance of the different parts of your page. <br>
-                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> The semantic</strong> HTML tags help the search engines and other user devices to determine the importance and context of web pages. The pages made with semantic elements are much easier to read. It has greater accessibility. It offers a better user experience.
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> Semantic
+                                                HTML</strong> or semantic markup is HTML that introduces meaning to the
+                                            web page rather than just presentation. Semantic HTML, also known as
+                                            semantic markup, refers to the use of HTML tags that convey the meaning—or
+                                            semantics—of the content contained within them.
+                                            By adding semantic HTML tags to your pages, you provide additional
+                                            information that helps define the roles and relative importance of the
+                                            different parts of your page. <br><br>
+                                            <strong class="text-danger"><i class="fa-solid fa-code"></i> The
+                                                semantic</strong> HTML tags help the search engines and other user
+                                            devices to determine the importance and context of web pages. The pages made
+                                            with semantic elements are much easier to read. It has greater
+                                            accessibility. It offers a better user experience.
                                         </p>
                                     </div>
                                 </div>
@@ -375,7 +403,7 @@
                         </div>
                     </div>
 
-                    <div class="col">
+                    <div class="col faq__img">
                         <img class="w-75 ms-5" src="./images/faq.png" alt="">
                     </div>
                 </div>
@@ -383,11 +411,65 @@
         </section>
         <!-- FAQ End -->
 
-
     </main> <!--main end -->
 
     <!-- footer start -->
-    <footer></footer>
+    <footer class="pt-5">
+        <section class="footer-area py-5">
+            <div class="container">
+                <div class="row text-center text-lg-start">
+                    <div class="col-lg-3 col-sm-1">
+                        <div class="footer-single-item footer-one">
+                            <img class="pb-4" src="./images/logo.png" alt="">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-1">
+                        <div class="footer-single-item footer-two">
+                            <h4 class="pb-4">Usefull Links</h4>
+                            <ul class="list-unstyled">
+                                <li class="pb-2">Home</li>
+                                <li class="pb-2">About Us</li>
+                                <li class="pb-2">Cases</li>
+                                <li class="pb-2">Blogs</li>
+                                <li class="pb-2">Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-1">
+                        <div class="footer-single-item footer-three">
+                            <h4 class="pb-4">Contact Now</h4>
+                            <p>555 4th 5t NW, Washington
+                                DC 20530, United States</p>
+                            <ul class="footer-contact list-unstyled">
+                                <li>+88 01750 000 000</li>
+                                <li class="pb-3"> +88 01750 000 000</li>
+                                <li>info@gmail.com</li>
+                                <li>info@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-1">
+                        <div class="footer-single-item footer-four">
+                            <h4 class="pb-4">Subscribe</h4>
+                            <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+                            <div class="btn-toolbar mb-3" role="toolbar" aria-label="Toolbar with button groups">
+                                <div class="input-group footer-input w-75 z-3">
+                                    <input type="text" class="form-control py-3" placeholder="Email Address"
+                                        aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                </div>
+                                <div class="btn-group me-2 footer-btn" role="group" aria-label="First group">
+                                    <button type="button" class="z-3 border-0 btn btn-outline-secondary px-3"><i
+                                            class="fa-regular fa-paper-plane rounded-start-2"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
     <!-- footer end -->
 
 
